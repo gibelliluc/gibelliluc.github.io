@@ -21,19 +21,7 @@
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
 
-    <!-- GMAPS style -->
-    <style>
-        #contactform .btn:hover {
-            background: rgba(9,8,77,0.7);
-        }
-
-        #map-canvas {
-              width: 100%;
-              height: 300px;
-              margin-bottom: 15px;
-              border: 2px solid #fff;
-        }
-    </style>
+   
   </head>
 
   <body class="index" id="page-top">
@@ -70,23 +58,10 @@
     </header>
 
     <!-- Endereco Grid Section -->
-    <section id="endereco">
+    <section id="comprar">
       <div class="container">
-        <h2 class="text-center">Endereço</h2>
+        <h2 class="text-center">Comprar</h2>
         <hr class="star-primary">
-        <div class="row">
-          <div class="col-sm-12" id="map-canvas">
-            
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
-      <div class="container">
-        <h2 class="text-center">About</h2>
-        <hr class="star-light">
         <div class="row">
           <div class="col-lg-4 ml-auto">
             <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
@@ -99,6 +74,19 @@
               <i class="fa fa-download"></i>
               Download Theme
             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="endereco">
+      <div class="container">
+        <h2 class="text-center">Nosso endereço</h2>
+        <hr class="star-light">
+        <div class="row">
+          <div class="col-sm-12 map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.948746040071!2d-43.02216878574514!3d-22.841385685045104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99907592fbd03f%3A0x97d36e7a461e5c16!2sUltragaz!5e0!3m2!1spt-BR!2s!4v1502578752991" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -500,32 +488,7 @@
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
 
-    <!-- Google Maps script -->
-    <script>
-    function initialize() {
-            var mapOptions = {
-                center: new google.maps.LatLng(28.1823294, -82.352912),
-                zoom: 9,
-                mapTypeId: google.maps.MapTypeId.HYBRID,
-                scrollwheel: false,
-                draggable: false,
-                panControl: true,
-                zoomControl: true,
-                mapTypeControl: true,
-                scaleControl: true,
-                streetViewControl: true,
-                overviewMapControl: true,
-                rotateControl: true,
-            };
-    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-            }
-    google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-    <!--Google Maps API-->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlH7KTTa4heDbor7wvE8oqMjuQqYNr6SU&amp;sensor=true"></script>
       
   </body>
 
