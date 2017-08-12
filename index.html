@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <title>Botijão Online - Comprar botijão com bitcoin</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +21,19 @@
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
 
+    <!-- GMAPS style -->
+    <style>
+        #contactform .btn:hover {
+            background: rgba(9,8,77,0.7);
+        }
+
+        #map-canvas {
+              width: 100%;
+              height: 300px;
+              margin-bottom: 15px;
+              border: 2px solid #fff;
+        }
+    </style>
   </head>
 
   <body class="index" id="page-top">
@@ -35,13 +48,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#comprar">Comprar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact">Contato</a>
           </li>
         </ul>
       </div>
@@ -50,80 +60,23 @@
     <!-- Header -->
     <header class="masthead">
       <div class="container">
-        <img class="img-fluid" src="img/profile.png" alt="">
+        <img class="img-fluid" src="img/main-profile.png" alt="">
         <div class="intro-text">
-          <span class="name">Start Bootstrap</span>
+          <span class="name">Comprar Botijão de Gás</span>
           <hr class="star-light">
-          <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+          <span class="skills">Aceitamos dinheiro - cartão - bitcoin - litecoin</span>
         </div>
       </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <!-- Endereco Grid Section -->
+    <section id="endereco">
       <div class="container">
-        <h2 class="text-center">Portfolio</h2>
+        <h2 class="text-center">Endereço</h2>
         <hr class="star-primary">
         <div class="row">
-          <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
-            </div>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/cake.png" alt="">
-            </div>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/circus.png" alt="">
-            </div>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/game.png" alt="">
-            </div>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-            </div>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <div class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-            </div>
+          <div class="col-sm-12" id="map-canvas">
+            
           </div>
         </div>
       </div>
@@ -547,6 +500,33 @@
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
 
+    <!-- Google Maps script -->
+    <script>
+    function initialize() {
+            var mapOptions = {
+                center: new google.maps.LatLng(28.1823294, -82.352912),
+                zoom: 9,
+                mapTypeId: google.maps.MapTypeId.HYBRID,
+                scrollwheel: false,
+                draggable: false,
+                panControl: true,
+                zoomControl: true,
+                mapTypeControl: true,
+                scaleControl: true,
+                streetViewControl: true,
+                overviewMapControl: true,
+                rotateControl: true,
+            };
+    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+            }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <!--Google Maps API-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnycWatbGyK6ldFqErjFtko1yeMclNUOA&amp;sensor=true"></script>
+      
   </body>
 
 </html>
