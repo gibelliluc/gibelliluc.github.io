@@ -34,7 +34,7 @@
         margin: 0;
         padding: 0;
       }
-      .top-buffer { margin-top:20px; }
+      .top-buffer { margin-top:40px; }
     </style>
    
   </head>
@@ -97,12 +97,57 @@
         <div class="col-lg-4 mr-auto">
             <p>Somos a primeira distribuidora de gás do Brasil a aceitar pagamento com moedas virtuais.</p>
           </div>
-          <div class="col-lg-8 mx-auto text-center">
+          <!--
+            <div class="col-lg-8 mx-auto text-center">
             <a href="#" class="btn-primary btn-lg btn-outline">
               <i class="fa fa-download"></i>
               Download Theme
             </a>
+          </div>-->
+            
+        <div class="row">
+          <div class="col-sm-4 portfolio-item">
+            <div class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+            </div>
           </div>
+          <div class="col-sm-4 portfolio-item">
+            <div class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+            </div>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+            <div class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+            </div>
+          </div>  
+        </div>
+            
+        <div class="row top-buffer">
+            <div class="col-lg-12 ml-auto center-block mbm">
+                <form action="https://bitpay.com/checkout" method="post" >
+                  <input type="hidden" name="action" value="checkout" />
+                  <input type="hidden" name="posData" value="" />
+                  <input type="hidden" name="data" value="Cn+Xkp0p8gnXhCOkdUySQ/WeTYUPYrmO7mDNXtKb8TN3gzfUDaF53voCoWP1WmOG63mpm6ZJAKVPDGPKw2pP6f0fT2mf+NP2EnCCUUEA3ozx47f1WJY/wpFuPWUNSN8nj1iGmKTeKlCuPcoc/H0gyw==" />
+                  <input type="image" src="https://bitpay.com/img/button-large.png" border="0" name="submit" alt="Comprar com bitcoins." >
+                </form>
+            </div>
+        </div>   
         </div>
       </div>
     </section>
@@ -237,26 +282,27 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <h2>Project Title</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
-                  <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                    <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                  <h2>Botijão GLP P13</h2>
+                  <img class="img-fluid img-centered top-buffer" src="img/produtos/p13.png" alt="">
+                  <p>Gás GLP P13 ideal para uso residencial.</p>
                   <ul class="list-inline item-details">
-                    <li>Client:
+                    <li>Ligue no Disk e peça agora:
                       <strong>
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
+                        +55 21 3715-1171
                       </strong>
                     </li>
-                    <li>Date:
+                    <li>Peça pelo chat do facebook:
                       <strong>
-                        <a href="http://startbootstrap.com">April 2014</a>
+                        <a href="https://www.facebook.com/ultragazcolubande/">Fale no facebook</a>
                       </strong>
                     </li>
-                    <li>Service:
-                      <strong>
-                        <a href="http://startbootstrap.com">Web Development</a>
-                      </strong>
+                    <li>Pague em bitcoin:
+                      <form action="https://bitpay.com/checkout" method="post" >
+                          <input type="hidden" name="action" value="checkout" />
+                          <input type="hidden" name="posData" value="" />
+                          <input type="hidden" name="data" value="Cn+Xkp0p8gnXhCOkdUySQ/WeTYUPYrmO7mDNXtKb8TN3gzfUDaF53voCoWP1WmOG63mpm6ZJAKVPDGPKw2pP6f0fT2mf+NP2EnCCUUEA3ozx47f1WJY/wpFuPWUNSN8nj1iGmKTeKlCuPcoc/H0gyw==" />
+                          <input type="image" src="https://bitpay.com/img/button-large.png" border="0" name="submit" alt="Comprar com bitcoins." >
+                        </form> 
                     </li>
                   </ul>
                   <button class="btn btn-success" type="button" data-dismiss="modal">
@@ -313,182 +359,8 @@
         </div>
       </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>Project Title</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/circus.png" alt="">
-                  <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                    <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                  <ul class="list-inline item-details">
-                    <li>Client:
-                      <strong>
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a href="http://startbootstrap.com">April 2014</a>
-                      </strong>
-                    </li>
-                    <li>Service:
-                      <strong>
-                        <a href="http://startbootstrap.com">Web Development</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>Project Title</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/game.png" alt="">
-                  <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                    <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                  <ul class="list-inline item-details">
-                    <li>Client:
-                      <strong>
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a href="http://startbootstrap.com">April 2014</a>
-                      </strong>
-                    </li>
-                    <li>Service:
-                      <strong>
-                        <a href="http://startbootstrap.com">Web Development</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>Project Title</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/safe.png" alt="">
-                  <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                    <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                  <ul class="list-inline item-details">
-                    <li>Client:
-                      <strong>
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a href="http://startbootstrap.com">April 2014</a>
-                      </strong>
-                    </li>
-                    <li>Service:
-                      <strong>
-                        <a href="http://startbootstrap.com">Web Development</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>Project Title</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/submarine.png" alt="">
-                  <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                    <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                  <ul class="list-inline item-details">
-                    <li>Client:
-                      <strong>
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a href="http://startbootstrap.com">April 2014</a>
-                      </strong>
-                    </li>
-                    <li>Service:
-                      <strong>
-                        <a href="http://startbootstrap.com">Web Development</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
+    
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
